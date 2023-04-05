@@ -2,7 +2,7 @@
   "name": "@zaui/multiselect",
   "private": true,
   "publishConfig": {
-    "@zaui:registry":"https://npm.pkg.github.com"
+    "registry":"https://npm.pkg.github.com/@zaui"
   },
   "version": "0.0.0",
   "type": "module",
