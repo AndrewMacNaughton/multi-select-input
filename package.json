@@ -1,5 +1,5 @@
 {
-  "name": "@zaui/multiselect",
+  "name": "@zaui/vue3-multiselect",
   "publishConfig": {
     "registry":"https://npm.pkg.github.com/@zaui"
   },
