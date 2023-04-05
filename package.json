@@ -1,6 +1,5 @@
 {
   "name": "@zaui/multiselect",
-  "private": true,
   "publishConfig": {
     "registry":"https://npm.pkg.github.com/@zaui"
   },
