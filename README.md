@@ -9,7 +9,7 @@ This is a reusable multiselect control that allows the user to select multiple i
 If you have already created or your file already has an .npmrc file wiht a valid token, please skip directly to step 3.
 
 1. To install this you will need to first create a Personal Access Token (Classic) at github.com [following the instructions in this link](https://docs.github.com/en/enterprise-server@3.4/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token).<br>
- **<em>Please only select package:read as the only scope</em>**<br/>
+ **<em>Please only select package:read as the scope</em>**<br/>
 
 2. To install the project in a new project you will need to add a .npmrc file to the root of the project with the following contents. The comment is designed to be left in as that is the syntax from NPM. If the file already exists, please update the token with your own token.
     ```
