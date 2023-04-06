@@ -6,4 +6,4 @@ export default {
     },
 }
 // Export as named for use as a component only
-export { default as MultiSelect } from "./components/MultiSelect.vue";
+// export { default as MultiSelect } from "./components/MultiSelect.vue";
