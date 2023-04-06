@@ -1,9 +1,9 @@
 {
   "name": "@zaui/vue3-multiselect",
   "publishConfig": {
-    "registry":"https://npm.pkg.github.com/@zaui"
+    "registry": "https://npm.pkg.github.com/@zaui"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "type": "module",
   "files": [
     "dist"
