@@ -1,4 +1,4 @@
-name: Vue Component
+name: Vue Multiselect Component
 
 on:
   push:
