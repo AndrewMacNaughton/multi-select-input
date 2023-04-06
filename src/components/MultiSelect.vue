@@ -142,10 +142,9 @@ export default {
         ].reduce((acc, item, index) => {
           // If its not the first entry, prepend the string with a comma and a space
           const spacing = index !== 0 ? ", " : "";
+          const foundItem = this.copiedSearchOptions().find((f)=>f.value === this.selectedItems[item].value)
           // return the string and the matched value.
-          return (acc +=
-            spacing +
-           this.selectedItems[item].label)
+          return (acc += spacing + foundItem.label);
         }, "");
       } else return "";
     },
