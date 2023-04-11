@@ -1,5 +1,7 @@
 <template>
-  <div class="dropdown component form-input input-item">
+  <div
+    class="zaui-componentry-multiselect dropdown component form-input input-item"
+  >
     <div class="input-wrapper">
       <span
         :class="{
@@ -142,7 +144,9 @@ export default {
         ].reduce((acc, item, index) => {
           // If its not the first entry, prepend the string with a comma and a space
           const spacing = index !== 0 ? ", " : "";
-          const foundItem = this.copiedSearchOptions().find((f)=>f.value === this.selectedItems[item].value)
+          const foundItem = this.copiedSearchOptions().find(
+            (f) => f.value === this.selectedItems[item].value
+          );
           // return the string and the matched value.
           return (acc += spacing + foundItem.label);
         }, "");
@@ -245,28 +249,24 @@ export default {
 };
 </script>
 
-<style scoped>
-.dropdown {
+<style lang="scss">
+.zaui-componentry-multiselect.dropdown {
   position: relative;
+  .selected-label {
+    position: absolute;
+    top: 4px;
+    left: 12px;
+    font-size: 11px;
+    color: #aaa;
+  }
+  &:not(:focus-within) {
+    .selected-label {
+      font-size: 16px;
+      top: 12px;
+      color: #555;
+    }
+  }
 }
-.selected-label {
-  position: absolute;
-  top: 4px;
-  left: 12px;
-  font-size: 11px;
-  color: #aaa;
-}
-.dropdown:not(:focus-within).selected-label {
-  font-size: 16px;
-  top: 12px;
-  color: #555;
-}
-.dropdown.selected-label.test {
-  font-size: 11px;
-  top: 4px;
-  color: #aaa;
-}
-
 .input-wrapper {
   position: relative;
 }
@@ -299,7 +299,6 @@ export default {
 .selected {
   background-color: #ddd;
 }
-
 input[type="text"] {
   width: 100%;
 }
