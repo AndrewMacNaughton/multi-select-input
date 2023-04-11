@@ -27,6 +27,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.1.0",
+    "node-sass": "^8.0.0",
+    "sass": "^1.61.0",
     "vite": "^4.2.0"
   },
   "description": "This is a reusable multiselect control that allows the user to select multiple items. It includes keyboard navigation, smart truncating (may need work!). This contains styling which an easily be overridden using :deep(selector). If you edit any of the reusable components and publish them, please ensure they are versioned correctly using standard npm style versioning and that they maintain backward compatability for previous versions whereever possible. Please ensure that you only edit this component when something absolutely cannot be configured/styled from the parent component in your project.",
