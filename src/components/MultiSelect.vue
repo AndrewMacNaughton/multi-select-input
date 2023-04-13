@@ -250,83 +250,85 @@ export default {
 </script>
 
 <style lang="scss">
-.zaui-componentry-multiselect.dropdown {
-  position: relative;
-  .selected-label {
-    position: absolute;
-    top: 4px;
-    left: 12px;
-    font-size: 11px;
-    color: #aaa;
-  }
-  &:not(:focus-within) {
+.zaui-componentry-multiselect {
+  &.dropdown {
+    position: relative;
     .selected-label {
-      font-size: 16px;
-      top: 12px;
-      color: #555;
+      position: absolute;
+      top: 4px;
+      left: 12px;
+      font-size: 11px;
+      color: #aaa;
+    }
+    &:not(:focus-within) {
+      .selected-label {
+        font-size: 16px;
+        top: 12px;
+        color: #555;
+      }
     }
   }
-}
-.input-wrapper {
-  position: relative;
-}
-.zaui-input {
-  box-sizing: border-box;
-  font-size: 13px;
-  padding-top: 10px;
-}
-.suggestion-list {
-  background-color: rgba(255, 255, 255, 0.95);
-  border: 1px solid #eee;
-  list-style: none;
-  display: block;
-  margin: 0;
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  z-index: 3;
-  text-align: left;
-  border-radius: 4px;
-  padding: 0px;
-  color: #555;
-  cursor: pointer;
-}
-.list {
-  cursor: pointer;
-  padding: 8px;
-}
-.selected {
-  background-color: #ddd;
-}
-input[type="text"] {
-  width: 100%;
-}
-input:focus-visible {
-  outline: none;
-}
-.click-away-helper {
-  position: relative;
-  z-index: 2 !important;
-  max-height: 36px;
-}
-.click-away-wrapper {
-  width: 100vw;
-  height: 100vh;
-  position: fixed;
-  top: 0px;
-  left: 0px;
-  z-index: 1;
-}
-.outer-item {
-  padding: 8px;
-}
-.input-wrapper:after {
-  content: "⌄";
-  position: absolute;
-  right: 12px;
-  top: 0px;
-  font-size: 24px;
-  color: #888;
+  .input-wrapper {
+    position: relative;
+  }
+  .zaui-input {
+    box-sizing: border-box;
+    font-size: 13px;
+    padding-top: 10px;
+  }
+  .suggestion-list {
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #eee;
+    list-style: none;
+    display: block;
+    margin: 0;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    z-index: 3;
+    text-align: left;
+    border-radius: 4px;
+    padding: 0px;
+    color: #555;
+    cursor: pointer;
+  }
+  .list {
+    cursor: pointer;
+    padding: 8px;
+  }
+  .selected {
+    background-color: #ddd;
+  }
+  input[type="text"] {
+    width: 100%;
+  }
+  input:focus-visible {
+    outline: none;
+  }
+  .click-away-helper {
+    position: relative;
+    z-index: 2 !important;
+    max-height: 36px;
+  }
+  .click-away-wrapper {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 1;
+  }
+  .outer-item {
+    padding: 8px;
+  }
+  .input-wrapper:after {
+    content: "⌄";
+    position: absolute;
+    right: 12px;
+    top: 0px;
+    font-size: 24px;
+    color: #888;
+  }
 }
 </style>
